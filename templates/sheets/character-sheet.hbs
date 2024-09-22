@@ -1,0 +1,49 @@
+<form class="character-sheet" autocomplete="off">
+  <div class="sheet-column">
+    <section class="bio">{{> "systems/falloutpnp/templates/partials/actor/bio.hbs"}}</section>
+    {{!-- TODO: Fix vertical between special and secondary not connecting --}}
+    <section class="special-and-secondary">
+      <div class="special relative">
+        {{> "systems/falloutpnp/templates/partials/actor/special.hbs"}}
+      </div>
+      <div class="secondary">
+        {{> "systems/falloutpnp/templates/partials/actor/secondary.hbs"}}
+      </div>
+    </section>
+    <section class="skills relative">{{> "systems/falloutpnp/templates/partials/actor/skills.hbs"}}</section>
+  </div>
+
+  <div class="sheet-column">
+    <section class="status">{{> "systems/falloutpnp/templates/partials/actor/status.hbs"}}</section>
+   <section>
+  <h2>Weapons</h2>
+  <select name="system.selectedWeapon" id="weapon-select">
+    {{#each weapons}}
+      <option value="{{this.name}}">{{this.name}}</option>
+    {{/each}}
+  </select>
+
+  <div id="weapon-details">
+    {{#if system.selectedWeapon}}
+      <h3>Detalles del arma seleccionada:</h3>
+      <p><strong>Daño:</strong> {{lookup falloutWeapons system.selectedWeapon "damage"}}</p>
+      <p><strong>Peso:</strong> {{lookup falloutWeapons system.selectedWeapon "weight"}}</p>
+      <p><strong>Descripción:</strong> {{lookup falloutWeapons system.selectedWeapon "description"}}</p>
+    {{/if}}
+  </div>
+</section>
+
+
+    <section>{{> "systems/falloutpnp/templates/partials/actor/inventory.hbs"}}</section>
+    <section>
+      <table>
+        <tr>
+          <td>
+            <h2>Notes</h2>
+            <textarea name="system.notes" style="min-height: 10rem; resize: vertical">{{system.notes}}</textarea>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</form>

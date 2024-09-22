@@ -1,0 +1,363 @@
+{
+  "Actor": {
+    "types": [
+      "character",
+      "enemy",
+      "boss",
+      "trap"
+    ],
+    "templates": {
+      "common": {
+        "race": null,
+        "notes": "",
+        "caps": 0,
+        "maxCarryWeight": 15,
+        "general": {
+          "level": 1,
+          "karma": 0,
+          "experience": 0,
+          "name": "",
+          "race": "human",
+          "gender": "",
+          "age": "",
+          "height": "",
+          "weight": "",
+          "skinTone": "",
+          "hair": "",
+          "eyes": "",
+          "remainingSpecial": 5,
+          "remainingSkillPoints": 0
+        },
+        "special": {
+          "str": {
+            "base": 5,
+            "modifier": 0
+          },
+          "per": {
+            "base": 5,
+            "modifier": 0
+          },
+          "end": {
+            "base": 5,
+            "modifier": 0
+          },
+          "cha": {
+            "base": 5,
+            "modifier": 0
+          },
+          "int": {
+            "base": 5,
+            "modifier": 0
+          },
+          "agi": {
+            "base": 5,
+            "modifier": 0
+          },
+          "luc": {
+            "base": 5,
+            "modifier": 0
+          }
+        },
+        "secondary": {},
+        "sequence": 0,
+        "isTaggingDisabled": false,
+        "skills": {
+          "smallGuns": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "bigGuns": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "energyWeapons": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "unarmed": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "meleeWeapons": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "throwing": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "firstAid": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0,
+            "usesRemaining": 3
+          },
+          "doctor": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0,
+            "usesRemaining": 2
+          },
+          "sneak": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "lockpick": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "steal": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "traps": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "science": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "repair": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "pilot": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "speech": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "barter": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "gambling": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          },
+          "outdoorsman": {
+            "isTagged": false,
+            "modifier": 0,
+            "skillPoints": 0
+          }
+        },
+        "status": {
+          "health": {
+            "current": 0
+          },
+          "rads": {
+            "current": 0
+          },
+          "poison": {
+            "current": 0
+          },
+          "electricity": {
+            "resist": 0
+          },
+          "gas": {
+            "resist": 0
+          }
+        },
+        "armor": {
+          "baseAc": 0,
+          "helmet": {
+            "name": "",
+            "ac": 0,
+            "condition": 0,
+            "damageThreshold": {
+              "normal": 0,
+              "laser": 0,
+              "fire": 0,
+              "plasma": 0
+            },
+            "damageResistance": {
+              "normal": 0,
+              "laser": 0,
+              "fire": 0,
+              "plasma": 0
+            }
+          },
+          "armor": {
+            "name": "",
+            "ac": 0,
+            "condition": 0,
+            "damageThreshold": {
+              "normal": 0,
+              "laser": 0,
+              "fire": 0,
+              "plasma": 0,
+              "explode": 0
+            },
+            "damageResistance": {
+              "normal": 0,
+              "laser": 0,
+              "fire": 0,
+              "plasma": 0,
+              "explode": 0
+            }
+          }
+        }
+      },
+      "concept": "",
+      "enemy": {
+        "health": 0,
+        "healthMaximum": 0,
+        "sequence": 0,
+        "actionPoints": 0,
+        "xp": 0,
+        "criticalChance": 0,
+        "armorClass": 0,
+        "weapons": {
+          "weapon1": {
+            "type": "",
+            "name": ""
+          },
+          "weapon2": {
+            "type": "",
+            "name": ""
+          }
+        },
+        "armor": {
+          "damageThreshold": {
+            "normal": 0,
+            "laser": 0,
+            "fire": 0,
+            "plasma": 0,
+            "explode": 0
+          },
+          "damageResistance": {
+            "normal": 0,
+            "laser": 0,
+            "fire": 0,
+            "plasma": 0,
+            "explode": 0
+          }
+        },
+        "resistance": {
+          "poison": 0,
+          "radiation": 0,
+          "gasInhaled": 0,
+          "gasContact": 0
+        },
+        "attacks": {
+          "first": {
+            "type": "",
+            "hitChance": null,
+            "apCost": null,
+            "damage": null,
+            "effect": ""
+          },
+          "second": {
+            "type": "",
+            "hitChance": null,
+            "apCost": null,
+            "damage": null,
+            "effect": ""
+          },
+          "third": {
+            "type": "",
+            "hitChance": null,
+            "apCost": null,
+            "damage": null,
+            "effect": ""
+          }
+        },
+        "notes": ""
+      }
+    },
+    "enemy": {
+      "templates": [
+        "enemy",
+        "concept"
+      ]
+    },
+    "boss": {
+      "templates": [
+        "enemy",
+        "concept"
+      ]
+    },
+    "character": {
+      "templates": [
+        "common"
+      ]
+    }
+  },
+  "Item": {
+    "types": [
+      "weapon",
+      "armor",
+      "custom"
+    ],
+    "templates": {
+      "common": {
+        "description": "",
+        "weight": 1,
+        "quantity": 1
+      },
+      "condition": {
+        "condition": 100
+      }
+    },
+    "weapon": {
+      "templates": [
+        "common",
+        "condition"
+      ],
+      "attackType": "unarmed",
+      "minStrength": 1,
+      "apSingle": 3,
+      "apTargeted": 4,
+      "apBurst": null,
+      "damageRoll": "1d12+3"
+    },
+    "armor": {
+      "templates": [
+        "common",
+        "condition"
+      ],
+      "armorClass": 5,
+      "damareThreshold": {
+        "normal": 0,
+        "laser": 0,
+        "fire": 0,
+        "plasma": 0,
+        "explosive": 0
+      },
+      "damageResistance": {
+        "normal": 20,
+        "laser": 20,
+        "fire": 10,
+        "plasma": 10,
+        "explosive": 10
+      },
+      "raceRestriction": null,
+      "sneakSkillReduction": 0,
+      "radiationResistanceBonus": 0
+    },
+    "custom": {
+      "templates": [
+        "common"
+      ]
+    }
+  }
+}

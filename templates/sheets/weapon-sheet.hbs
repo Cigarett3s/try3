@@ -1,0 +1,36 @@
+<form class="weapon-sheet" autocomplete="off">
+  <header class="sheet-header">
+    <img src="{{item.img}}" data-edit="img" title="{{item.name}}" height="64" width="64" />
+    <h1><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'Name'}}" /></h1>
+  </header>
+
+  <select name="system.attackType">
+    {{selectOptions config.attackTypes selected=system.attackType nameAttr="key" labelAttr="label"}}
+  </select>
+  <span class="undertext">Attack Type</span>
+  
+
+  <div>
+    <table>
+      <tr>
+        <td class="cell-with-radio">
+          <p>Condition</p>
+          <div>
+            {{#each falloutpnp.weaponConditions as |weaponCondition|}}
+              <span class="cell-with-radio__radio-container">
+                <input
+                  title="Set weapon condition {{weaponCondition.value}}%."
+                  type="radio"
+                  value="{{weaponCondition.value}}"
+                  name="data.system.condition"
+                  {{checked (eq ../data.system.condition weaponCondition.value)}}
+                />
+                <span class="undertext-radio">{{condition.label}}</span>
+              </span>
+            {{/each}}
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</form>

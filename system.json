@@ -1,0 +1,42 @@
+{
+  "id": "falloutpnp",
+  "title": "Garciagod",
+  "description": "etor me la ultrapela.",
+  "license": "LICENSE.md",
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11",
+    "maximum": "11"
+  },
+  "authors": [
+    {
+      "name": "Garcia God"
+    },
+    {
+      "name": "Garcia Godx2"
+    }
+  ],
+  "esmodules": [
+    "main.js"
+  ],
+  "styles": [
+    "styles.css"
+  ],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "hp",
+  "url": "https://github.com/FedorFadeev/falloutpnp",
+  "manifest": "https://raw.githubusercontent.com/Cigarett3s/etor-me-la-pela/main/system.json",
+  "download": "https://github.com/FedorFadeev/falloutpnp/archive/refs/heads/main.zip",
+  "initiative": "@sequence"
+}
+ 
